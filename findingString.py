@@ -2,10 +2,6 @@ from fuzzywuzzy import fuzz
 from config import *
 import random
 
-inputPalavra = str(input('String: '))
-inputFitness = int(input('Nível de Acurácia: '))
-inputPalavraTamanho = len(inputPalavra)
-
 
 class Membro:
     def __init__(self, inputPalavraTamanho):
@@ -76,4 +72,7 @@ def algoritmoGenetico():
             exit()
 
 if __name__ == '__main__':
+    inputPalavra = str(input('String: '))
+    inputFitness = int(input('Nível de Acurácia: '))
+    inputPalavraTamanho = len(inputPalavra)
     algoritmoGenetico()
